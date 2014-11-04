@@ -8,6 +8,7 @@ var merge = require('merge-stream');
 var paths = require('./gulp.config.json');
 var plato = require('plato');
 var plug = require('gulp-load-plugins')();
+var sass = require('gulp-sass');
 var reload = browserSync.reload;
 
 var colors = plug.util.colors;
@@ -90,11 +91,24 @@ gulp.task('vendorjs', function () {
         .pipe(gulp.dest(paths.build));
 });
 
+
+/**
+ * Transforming scss files into css
+ * @return {Stream}
+ */
+gulp.task('sass', function () {
+    log('Transforming scss files into css');
+    gulp.src('./**/*.scss')
+        .pipe(sass())
+        .pipe(gulp.dest(''));
+});
+
+
 /**
  * Minify and bundle the CSS
  * @return {Stream}
  */
-gulp.task('css', function () {
+gulp.task('css', ['sass'], function () {
     log('Bundling, minifying, and copying the app\'s CSS');
 
     return gulp.src(paths.css)
