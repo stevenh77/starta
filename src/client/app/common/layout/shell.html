@@ -1,0 +1,30 @@
+<div data-ng-controller="Shell as vm">
+
+    <div id="splash-page" data-ng-show="false">
+        <div class="page-splash">
+            <div class="page-splash-message">
+                Starter App
+            </div>
+        </div>
+    </div>
+
+    <header class="clearfix">
+        <div id="ribbon"></div>
+        <div data-ng-include="'app/common/layout/topnav.html'"></div>
+    </header>
+    <section id="content" class="content">
+
+        <div data-ng-view class="fader-animation"></div>
+
+        <div data-ngplus-overlay
+             data-ngplus-overlay-delay-in="50"
+             data-ngplus-overlay-delay-out="700"
+             data-ngplus-overlay-animation="dissolve-animation">
+            <img src="content/images/busy.gif" />
+
+            <div class="page-spinner-message overlay-message">{{vm.busyMessage}}</div>
+        </div>
+    </section>
+</div>
+
+
