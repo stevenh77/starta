@@ -13,8 +13,9 @@
         <div data-ng-include="'app/common/layout/topnav.html'"></div>
     </header>
     <section id="content" class="content">
-
-        <div data-ng-view class="fader-animation"></div>
+        
+        <!-- bit jumpy so removed the animation class="fader-animation"-->
+        <div data-ng-view ></div>
 
         <div data-ngplus-overlay
              data-ngplus-overlay-delay-in="50"

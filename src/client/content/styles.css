@@ -1,4 +1,4 @@
-/*#region Override background color theme */
+﻿/*#region Override background color theme */
 /*For Bootstrap 3*/
 .nav, .pagination, .carousel, .panel-title a {
   cursor: pointer; }
@@ -576,3 +576,63 @@ a {
   color: #000; }
 
 /*#endregion */
+.ready .gs-w:not(.preview-holder), .ready .resize-preview-holder {
+  transition: opacity 0.3s, left 0.3s, top 0.3s, width 0.3s, height 0.3s; }
+
+.ready .gs-w:not(.preview-holder) {
+  -webkit-transition: opacity 0.3s, left 0.3s, top 0.3s;
+  -moz-transition: opacity 0.3s, left 0.3s, top 0.3s;
+  -o-transition: opacity 0.3s, left 0.3s, top 0.3s;
+  transition: opacity 0.3s, left 0.3s, top 0.3s; }
+
+.gridster {
+  margin-top: 85px;
+  margin-bottom: 40px; }
+
+.gridster .gs-w {
+  background: #FFF;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  position: absolute; }
+
+[data-sizex="2"] {
+  width: 300px; }
+
+[data-sizey="1"] {
+  height: 140px; }
+
+[data-row="1"] {
+  top: 10px; }
+
+[data-col="1"] {
+  left: 10px; }
+
+.gridster ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.gridster ul li header {
+  height: 25px; }
+
+.gridster ul li div {
+  top: 25px;
+  height: 100%;
+  width: 100%; }
+
+.gridster-tile-title-container {
+  position: relative; }
+
+.gridster-tile-title {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  margin: 20px;
+  font-size: 16px; }
+
+/*# sourceMappingURL=../../../../../WINDOWS/system32/styles.css.map */
