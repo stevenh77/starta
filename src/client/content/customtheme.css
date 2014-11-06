@@ -20,7 +20,7 @@ input, select {
   display: inline-block !important; }
 
 .navbar * {
-  background-image: none !important;
+  /*background-image: none !important;*/
   -webkit-text-shadow: none !important;
   -ms-text-shadow: none !important;
   text-shadow: none !important; }

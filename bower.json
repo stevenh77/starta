@@ -1,18 +1,19 @@
 {
-    "name": "StarterProject-ng",
-    "version": "1.0.0",
-    "description": "StarterProject Angular",
-    "authors": [
-        "Steven Hollidge"
-    ],
-    "license": "MIT",
-    "homepage": "https://github.com/stevenh77/starterproject-ng",
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components"
-    ],
-    "dependencies": {
-      "extras.angular.plus": "^0.9.0"
-    }
+  "name": "starta",
+  "version": "1.0.0",
+  "description": "Starter project for Angular",
+  "authors": [
+    "Steven Hollidge"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/stevenh77/starterproject-ng",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "extras.angular.plus": "^0.9.0",
+    "angular-bootstrap": "~0.11.2"
+  }
 }

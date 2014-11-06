@@ -1,90 +1,28 @@
-﻿<section class="startboard">
+﻿<section id="home-view" class="mainbar">
     <section class="matter">
         <div class="container">
-            
-            <section class="demo">
-                <div class="gridster">
-                    <ul>
-                        <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-                            <header></header>
-                            <a href="#/dashboard">
-                                <div class="gridster-tile-title-container">
-                                    <span class="gridster-tile-title">Dashboard</span> 
+            <div gridster="gridsterOptions">
+                <ul>
+                    <li gridster-item="tile" ng-repeat="tile in tiles">
+                        <div class="box" ng-controller="CustomTileCtrl">
+                            <div class="box-header resizeHandle">
+                                <div class="box-header-btns pull-right">
+                                    <a title="Settings" ng-click="openSettings(tile)"><i class="glyphicon glyphicon-cog"></i></a>
+                                    <a title="Remove" ng-click="remove(tile)"><i class="glyphicon glyphicon-remove"></i></a>
+                                </div>
+                            </div>
+
+                            <a href="{{ tile.url }}">
+                                <div class="box-content">
+                                    <span class="tile-title">
+                                        {{ tile.name }}
+                                    </span>
                                 </div>
                             </a>
-                        </li>
-
-                        <li data-row="1" data-col="3" data-sizex="2" data-sizey="1">
-                            <header></header>
-                            <a href="#/admin">
-                                <div class="gridster-tile-title-container">
-                                    <span class="gridster-tile-title">Admin</span>
-                                </div>
-                            </a>
-                        </li>
-
-<!--
-    <li data-row="3" data-col="1" data-sizex="1" data-sizey="1"></li>
-    <li data-row="3" data-col="1" data-sizex="3" data-sizey="1"></li>
-    <li data-row="3" data-col="2" data-sizex="2" data-sizey="1"></li>
-
-    <li data-row="2" data-col="4" data-sizex="2" data-sizey="1"></li>
-    <li data-row="3" data-col="4" data-sizex="1" data-sizey="1"></li>
-
-    <li data-row="1" data-col="5" data-sizex="1" data-sizey="1"></li>
-    <li data-row="3" data-col="5" data-sizex="1" data-sizey="1"></li>
-
-    <li data-row="1" data-col="6" data-sizex="1" data-sizey="1"></li>
-    <li data-row="2" data-col="6" data-sizex="1" data-sizey="2"></li>
--->
-                    </ul>
-                </div>
-
-            </section>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 </section>
-
-<script type="text/javascript">
-  var gridster;
-
-  $(function(){
-
-      $('.gridster player-revert>a').click(function (e) {
-          e.preventDefault();
-          $(this).parent().removeClass("player-revert");
-      });
-
-    gridster = $(".gridster > ul").gridster({
-        widget_margins: [10, 10],
-        widget_base_dimensions: [140, 140],
-        min_cols: 6,
-        draggable: {
-            handle: 'header'
-        },
-        resize: {
-            enabled: true
-        }
-    }).data('gridster');
-
-
-    // var collection = [
-    //     ['<li><div class="title">drag</div>Widget content</li>', 1, 2],
-    //     ['<li><div class="title">drag</div>Widget content</li>', 5, 2],
-    //     ['<li><div class="title">drag</div>Widget content</li>', 3, 2],
-    //     ['<li><div class="title">drag</div>Widget content</li>', 2, 1],
-    //     ['<li><div class="title">drag</div>Widget content</li>', 4, 1],
-    //     ['<li><div class="title">drag</div>Widget content</li>', 1, 2],
-    //     ['<li><div class="title">drag</div>Widget content</li>', 2, 1],
-    //     ['<li><div class="title">drag</div>Widget content</li>', 3, 2],
-    //     ['<li><div class="title">drag</div>Widget content</li>', 1, 1],
-    //     ['<li><div class="title">drag</div>Widget content</li>', 2, 2],
-    //     ['<li><div class="title">drag</div>Widget content</li>', 1, 3],
-    // ];
-
-    // $.each(collection, function(i, widget){
-    //     gridster.add_widget.apply(gridster, widget)
-    // });
-
-  });
-    </script>

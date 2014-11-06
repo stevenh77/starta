@@ -18,7 +18,7 @@
     <link href="../../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <link href="../../node_modules/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link href="../../node_modules/toastr/toastr.css" rel="stylesheet" />
-    <link href="../../scripts/gridster/jquery.gridster.css" rel="stylesheet" />
+    <link href="../../bower_components/angular-gridster/dist/angular-gridster.min.css" rel="stylesheet" />
     <!-- endinject -->
 
     <!-- inject:css -->
@@ -39,7 +39,7 @@
         </div>
     </div>
 
-    <span data-cc-scroll-to-top></span>
+    <!--<span data-cc-scroll-to-top></span>-->
 
     <!-- inject-vendor:js -->
     <script src="../../node_modules/jquery/dist/jquery.js"></script>
@@ -48,11 +48,13 @@
     <script src="../../node_modules/angular-route/angular-route.js"></script>
     <script src="../../node_modules/angular-sanitize/angular-sanitize.js"></script>
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="../../node_modules/toastr/toastr.js"></script>
+    <script src="../../node_modules/lodash/dist/lodash.js"></script>
     <script src="../../node_modules/moment/moment.js"></script>
+    <script src="../../node_modules/toastr/toastr.js"></script>
     <script src="../../bower_components/extras.angular.plus/ngplus-overlay.js"></script>
-    <script src="../../scripts/gridster/jquery.gridster.with-extras.js"></script>
-    <script src="../../scripts/gridster/jquery.gridster.js"></script>
+    <script src="../../bower_components/angular-gridster/src/angular-gridster.js"></script>
+    <script src="../../bower_components/javascript-detect-element-resize/detect-element-resize.js"></script>
+    <script src="../../bower_components/javascript-detect-element-resize/jquery.resize.js"></script>
     <!-- endinject -->
 
     <!-- inject:js -->
@@ -84,6 +86,7 @@
     <script src="app/common/widgets/ccWidgetClose.js"></script>
     <script src="app/common/widgets/ccWidgetHeader.js"></script>
     <script src="app/common/widgets/ccWidgetMinimize.js"></script>
+    <script src="app/common/widgets/stGridsterTile.js"></script>
 
     <!--admin module -->
     <script src="app/modules/admin/admin.module.js"></script>
@@ -98,6 +101,7 @@
     <!--home module -->
     <script src="app/modules/home/home.module.js"></script>
     <script src="app/modules/home/config.route.js"></script>
+    <script src="app/modules/home/customTileCtrl.js"></script>
     <script src="app/modules/home/home.js"></script>
 
     <!-- endinject -->

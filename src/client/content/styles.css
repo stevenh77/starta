@@ -4,21 +4,22 @@
   cursor: pointer; }
 
 body {
-  background-color: #FAFAFA;
-  color: #7B8084; }
+  background-color: #FFF;
+  color: #7B8084;
+}
 
 #ribbon {
   display: block;
   width: 100%;
-  height: 10px;
+  height: 8px;
   background: url('images/line.svg') repeat-x top left;
   position: absolute;
   top: 0; }
 
 .navbar {
   border-bottom: 1px solid #d8dde1;
-  top: 10px;
-  height: 80px; }
+  margin-bottom: 0px;
+}
 
 .navbar-inverse {
   background-color: #f0f1f4; }
@@ -182,7 +183,7 @@ small {
 
 .navbar .navbar-brand {
   background: url(images/logo.png) no-repeat left center !important;
-  margin: 15px;
+    margin: 15px 15px 8px 15px;
   height: 45px;
   width: 135px; }
 
@@ -563,18 +564,6 @@ a {
     margin-right: 0.5em; }
  }
 
-.breadcrumb {
-  font: 24px Arial, Helvetica, sans-serif; }
-
-.startboard {
-  background-color: #3393df; }
-
-.tile {
-  background-color: #fff;
-  margin: 5px;
-  font-size: 14px;
-  color: #000; }
-
 /*#endregion */
 .ready .gs-w:not(.preview-holder), .ready .resize-preview-holder {
   transition: opacity 0.3s, left 0.3s, top 0.3s, width 0.3s, height 0.3s; }
@@ -585,18 +574,7 @@ a {
   -o-transition: opacity 0.3s, left 0.3s, top 0.3s;
   transition: opacity 0.3s, left 0.3s, top 0.3s; }
 
-.gridster {
-  margin-top: 85px;
-  margin-bottom: 40px; }
-
-.gridster .gs-w {
-  background: #FFF;
-  cursor: pointer;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  z-index: 2;
-  position: absolute; }
-
+/*
 [data-sizex="2"] {
   width: 300px; }
 
@@ -609,30 +587,54 @@ a {
 [data-col="1"] {
   left: 10px; }
 
-.gridster ul, ol {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+*/
 
-.gridster ul li header {
-  height: 25px; }
+.controls {
+  margin-bottom: 20px; }
 
-.gridster ul li div {
-  top: 25px;
+.page-header {
+  margin-top: 20px; }
+
+ul {
+  list-style: none; }
+
+.box {
   height: 100%;
-  width: 100%; }
+  border: 1px solid #ccc;
+  background-color: #fff; }
 
-.gridster-tile-title-container {
-  position: relative; }
+.box-header {
+  background-color: #eee;
+  padding: 0 30px 0 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: move;
+  position: relative;
+  height: 25px;
+}
 
-.gridster-tile-title {
+.box-header h3 {
+  display: inline-block; }
+
+.box-content {
+height: 100%;
+}
+
+.box-header-btns {
+  top: 0px;
+  right: 10px;
+  cursor: pointer;
   position: absolute;
-  bottom: 40px;
-  left: 0;
-  margin: 20px;
-  font-size: 16px; }
+}
 
-/*# sourceMappingURL=../../../../../WINDOWS/system32/styles.css.map */
+.box-header-btns a {
+    color: #8596a7;
+    opacity: 0.6;
+}
+
+.tile-title {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #8596a7; }

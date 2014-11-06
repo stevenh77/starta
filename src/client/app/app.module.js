@@ -17,6 +17,7 @@
         'app.common.core',
         'app.common.widgets',
         'app.common.layout',
+        'app.common.router',
 
         /*
          * Feature areas

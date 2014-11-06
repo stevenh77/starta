@@ -1,15 +1,15 @@
 {
-  "name": "starterproject-ng",
+  "name": "starta",
   "version": "1.0.0",
-  "description": "Starter Project for Angular based on HotTowel from John Papa",
+  "description": "Starter project for Angular based on HotTowel from John Papa",
   "authors": [
     "Steven Hollidge"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/stevenh77/starterproject-ng",
+  "homepage": "https://github.com/stevenh77/starta",
   "repository": {
     "type": "git",
-    "url": "https://github.com/stevenh77/starterproject-ng.git"
+    "url": "https://github.com/stevenh77/starta.git"
   },
   "scripts": {
     "init": "npm install",
