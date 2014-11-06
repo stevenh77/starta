@@ -96,19 +96,19 @@ gulp.task('vendorjs', function () {
  * Transforming scss files into css
  * @return {Stream}
  */
-gulp.task('sass', function () {
-    log('Transforming scss files into css');
-    gulp.src('./**/*.scss')
-        .pipe(sass())
-        .pipe(gulp.dest(''));
-});
+//gulp.task('sass', function () {
+//    log('Transforming scss files into css');
+//    gulp.src('./**/*.scss')
+//        .pipe(sass())
+//        .pipe(gulp.dest(''));
+//});
 
 
 /**
  * Minify and bundle the CSS
  * @return {Stream}
  */
-gulp.task('css', ['sass'], function () {
+gulp.task('css', function () {
     log('Bundling, minifying, and copying the app\'s CSS');
 
     return gulp.src(paths.css)
