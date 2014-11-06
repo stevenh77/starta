@@ -25,8 +25,8 @@
         };
 
         $scope.tiles = [
-            { sizeX: 1, sizeY: 1, row: 0, col: 0, name: 'Dashboard', url: '#/dashboard' },
-            { sizeX: 1, sizeY: 1, row: 0, col: 1, name: 'Admin', url: '#/admin' }
+            {sizeX: 1, sizeY: 1, row: 0, col: 0, name: 'Dashboard', url: '#/dashboard'},
+            {sizeX: 1, sizeY: 1, row: 0, col: 1, name: 'Admin', url: '#/admin'}
         ];
 
         activate();
@@ -36,13 +36,6 @@
         }
     }
 })();
-
-
-
-
-
-
-
 
 //$scope.gridsterOptions = {
 //    columns: 6, // the width of the grid, in columns

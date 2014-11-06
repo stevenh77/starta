@@ -19,7 +19,8 @@
     "./src/server/**/*.js"
   ],
   "fonts": [
-    "./node_modules/font-awesome/fonts/**/*.*"
+    "./node_modules/font-awesome/fonts/**/*.*",
+    "./node_modules/bootstrap/dist/fonts/**/*.*"
   ],
   "images": [
     "./src/client/content/images/**/*"
@@ -35,12 +36,16 @@
     "./node_modules/bootstrap/dist/js/bootstrap.js",
     "./node_modules/toastr/toastr.js",
     "./node_modules/moment/moment.js",
-    "./bower_components/extras.angular.plus/ngplus-overlay.js"
+    "./bower_components/extras.angular.plus/ngplus-overlay.js",
+    "./bower_components/angular-gridster/src/angular-gridster.js",
+    "./bower_components/javascript-detect-element-resize/detect-element-resize.js",
+    "./bower_components/javascript-detect-element-resize/jquery.resize.js"
   ],
   "vendorcss": [
     "./node_modules/bootstrap/dist/css/bootstrap.min.css",
     "./node_modules/font-awesome/css/font-awesome.min.css",
-    "./node_modules/toastr/toastr.css"
+    "./node_modules/toastr/toastr.css",
+    "./bower_components/angular-gridster/dist/angular-gridster.min.css"
   ],
   "jscs": "config/.jscsrc",
   "jshintrc":  "config/.jshintrc"
